@@ -1,100 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhishek's Personal site</title>
+    <title>Abhishek Kumar CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e5f8f6f5;
+            margin: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .header img {
+            border-radius: 50%;
+            width: 150px;
+        }
+        .header-info h1 {
+            margin: 0;
+            color: #6fbfbf;
+        }
+        .header-info p {
+            margin: 2px 0;
+        }
+        .download-btn {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .download-btn a {
+            background-color: #6fbfbf;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        hr {
+            border: 0;
+            height: 2px;
+            background: #afafaf;
+            margin: 20px 0;
+        }
+        h2, h3 {
+            color: #6fbfbf;
+            margin-bottom: 10px;
+        }
+        ul, ol {
+            margin: 0 0 20px 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table th, table td {
+            padding: 8px 5px;
+            text-align: left;
+        }
+        table th {
+            background-color: #f0f0f0;
+        }
+        .skills td {
+            width: 50%;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
-<style>
-    body {
-        background-color: #e5f8f6f5;
-    }
-
-    h1,
-    h2,
-    h3 {
-        color: #6fbfbf;
-    }
-
-    hr {
-        width: 2%;
-        border-style: dotted none none;
-        border-width: 5px;
-        border-color: rgb(175, 175, 175);
-    }
-
-    .for-mg {
-        margin: auto 10px;
-        text-align: center;
-    }
-
-    img {
-        border-radius: 100%;
-    }
-
-    .name-head {
-        font-size: 1rem;
-    }
-
-    .description {
-        font-size: 0.9rem;
-    }
-
-</style>
-
 <body>
-    <table cellspacing="20">
-        <tr>
-            <td><img src="https://i.ibb.co/jvS6hF2/abhi1.jpg" alt="img-Abhishek" width="150px"></td>
-            <td>
-                <h1 class="name-head">Abhishek Kr.</h1>
-                <p class="description">Student👨‍🎓 of <em><strong>ECE</strong></em>.</div>
-                </p>
+    <div class="container">
+        <div class="download-btn">
+            <a href="https://drive.google.com/file/d/1QO3kQkgKxy4I0gsuRKHndRbRQ9omzNDq/view?usp=sharing" download="Abhishek_Kumar_CV.pdf">Download CV</a>
+        </div>
+        <div class="header">
+            <img src="https://i.ibb.co/jvS6hF2/abhi1.jpg" alt="Abhishek Kumar">
+            <div class="header-info">
+                <h1>Abhishek Kumar</h1>
+                <p>📧 kumarabhihek07565@gmail.com | LinkedIn: abhishek5154 | GitHub: updatedabhi | 📞 +91-6203554162</p>
                 <p>Araria, Bihar</p>
-            </td>
-        </tr>
-    </table>
-    <hr>
-    <h3>Journey</h3>
-    <ul>
-        <li>FullStack Web Developer</li>
-        <li>Mastery in Python</li>
-        <li>C++, C and C#</li>
-    </ul>
-    <hr>
-    <h3>Hobbies</h3>
-    <ol>
-        <li>Computer Programming</li>
-        <li>Cooking</li>
-        <li>Sleeping</li>
-    </ol>
-    <hr>
-    <h3>Skills</h3>
-    <table cellspacing="10">
-        <tr>
-            <td>Webdevlopment</td>
-            <td>⭐⭐⭐⭐⭐</td>
-        </tr>
-        <tr>
-            <td>Android devlopment</td>
-            <td>⭐⭐⭐</td>
-        </tr>
-    </table>
-    <hr>
-    <h3>Qualification</h3>
-    <table cellspacing="10">
-        <tr>
-            <th>Date</th>
-            <th>Work</th>
-        </tr>
-        <tr>
-            <td>2018</td>
-            <td>Matric</td>
-        </tr>
-    </table>
-    <h2>Thank you!</h2>
-</body>
+            </div>
+        </div>
+        <hr>
 
+        <div class="section">
+            <h3>Technical Skills</h3>
+            <ul>
+                <li><strong>Languages:</strong> C, C++, Java, Python, JavaScript, TypeScript</li>
+                <li><strong>Frameworks:</strong> Node.js, Express.js, React.js, Serverless, Tailwind CSS, Bootstrap</li>
+                <li><strong>Databases & Tools:</strong> MongoDB, MySQL, DynamoDB, Git, Postman, AWS</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Experience</h3>
+            <p><strong>Software Developer Intern</strong> — Thriftyx | Apr 2025 – Sept 2025 | Hyderabad</p>
+            <ul>
+                <li>Developed backend services for <strong>AlluriahSweets</strong> ordering platform, streamlining workflows.</li>
+                <li>Automated bulk uploads, inventory sync, and order tracking, reducing manual effort by <strong>40%</strong>.</li>
+                <li>Optimized queries with <strong>MongoDB indexing</strong>, improving load speed by <strong>30%</strong>.</li>
+                <li>Integrated <strong>Razorpay</strong> for secure payments and <strong>Twilio</strong> for SMS notifications.</li>
+                <li>Bult serverless admin dashboard using <strong>AWS Lambda, API Gateway, DynamoDB</strong>, lowering infra cost by <strong>25%</strong>.</li>
+                <li>Implemented event-driven alerts with <strong>AWS SNS</strong> and modularized Lambda functions.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Projects</h3>
+            <p><strong>Pharma-Care</strong> (Full-Stack MERN Project)</p>
+            <ul>
+                <li>Developed full-stack web app using <strong>React.js, Node.js, Express.js, MongoDB</strong> for online medicine ordering and management.</li>
+                <li>Implemented RESTful APIs for user authentication, order processing, and inventory management.</li>
+                <li>Designed responsive <strong>React frontend</strong> with product listing, search, and cart functionalities.</li>
+                <li>Implemented role-based access control for admin, staff, and customers with different dashboards.</li>
+            </ul>
+            <p><strong>Word Lookup Dictionary</strong> (Desktop Application)</p>
+            <ul>
+                <li>Built desktop dictionary app in <strong>Java Swing</strong>, fetching definitions via Free Dictionary API.</li>
+                <li>Implemented <strong>Trie-based auto-suggestion</strong> for efficient word lookups.</li>
+                <li>Applied OOP principles for modular separation of UI, API logic, and algorithms.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Certifications</h3>
+            <ul>
+                <li>Master Node.js by Building a RESTful API & Web App — Udemy (Jun 2024 – Jan 2025)</li>
+                <li>The Complete Full-Stack Web Development Bootcamp — Udemy (Jul 2023 – Nov 2023)</li>
+                <li>Data Structures and Algorithms Specialization — Coursera (Aug 2022 – Dec 2022)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Achievements</h3>
+            <ul>
+                <li>Global Rank 210 — Google Kickstart 2024</li>
+                <li>Solved 600+ problems on LeetCode & GFG; participated in 15+ contests, consistently ranked top 10-15%.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Education</h3>
+            <p><strong>Lovely Professional University</strong> — B.Tech in Computer Science and Engineering | Jul 2022 – Aug 2025 | Punjab, India</p>
+            <p>CGPA: 7.61</p>
+        </div>
+
+        <div class="section">
+            <h3>Relevant Coursework</h3>
+            <ul>
+                <li>Data Structures & Algorithms, Operating Systems, Database Management Systems, Computer Networks, OOP, Cloud Computing, Software Engineering</li>
+            </ul>
+        </div>
+    </div>
+</body>
 </html>
