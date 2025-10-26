@@ -12,6 +12,7 @@
             margin: 20px;
             color: #333;
         }
+
         .container {
             max-width: 900px;
             margin: auto;
@@ -19,63 +20,145 @@
             background-color: #ffffff;
             box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
         }
-        .header {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-        .header img {
-            border-radius: 50%;
-            width: 150px;
-        }
-        .header-info h1 {
-            margin: 0;
-            color: #6fbfbf;
-        }
-        .header-info p {
-            margin: 2px 0;
-        }
+
         .download-btn {
             text-align: right;
             margin-bottom: 20px;
         }
+
         .download-btn a {
             background-color: #6fbfbf;
             color: white;
             padding: 10px 15px;
             text-decoration: none;
             border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
+
+        .download-btn a:hover {
+            background-color: #5ba5a5;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .header-info h1 {
+            margin: 0;
+            color: #6fbfbf;
+        }
+
+        .header-info p {
+            margin: 2px 0;
+            word-wrap: break-word;
+        }
+
         hr {
             border: 0;
             height: 2px;
             background: #afafaf;
             margin: 20px 0;
         }
+
         h2, h3 {
             color: #6fbfbf;
             margin-bottom: 10px;
         }
+
         ul, ol {
             margin: 0 0 20px 20px;
         }
+
         table {
             width: 100%;
             border-collapse: collapse;
             margin-bottom: 20px;
         }
+
         table th, table td {
             padding: 8px 5px;
             text-align: left;
         }
+
         table th {
             background-color: #f0f0f0;
         }
+
         .skills td {
             width: 50%;
         }
+
         .section {
             margin-bottom: 20px;
+        }
+
+        /* ✅ Responsive Styles */
+        @media (max-width: 768px) {
+            body {
+                margin: 10px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            .header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .header img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .header-info h1 {
+                font-size: 1.6em;
+            }
+
+            .header-info p {
+                font-size: 0.9em;
+            }
+
+            .download-btn {
+                text-align: center;
+                margin-bottom: 15px;
+            }
+
+            ul {
+                margin-left: 15px;
+            }
+
+            .skills td {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-info h1 {
+                font-size: 1.4em;
+            }
+
+            .download-btn a {
+                padding: 8px 12px;
+                font-size: 0.9em;
+            }
+
+            body {
+                font-size: 14px;
+            }
         }
     </style>
 </head>
@@ -84,6 +167,7 @@
         <div class="download-btn">
             <a href="https://drive.google.com/file/d/1QO3kQkgKxy4I0gsuRKHndRbRQ9omzNDq/view?usp=sharing" download="Abhishek_Kumar_CV.pdf">Download CV</a>
         </div>
+
         <div class="header">
             <img src="https://i.ibb.co/jvS6hF2/abhi1.jpg" alt="Abhishek Kumar">
             <div class="header-info">
@@ -111,7 +195,7 @@
                 <li>Automated bulk uploads, inventory sync, and order tracking, reducing manual effort by <strong>40%</strong>.</li>
                 <li>Optimized queries with <strong>MongoDB indexing</strong>, improving load speed by <strong>30%</strong>.</li>
                 <li>Integrated <strong>Razorpay</strong> for secure payments and <strong>Twilio</strong> for SMS notifications.</li>
-                <li>Bult serverless admin dashboard using <strong>AWS Lambda, API Gateway, DynamoDB</strong>, lowering infra cost by <strong>25%</strong>.</li>
+                <li>Built serverless admin dashboard using <strong>AWS Lambda, API Gateway, DynamoDB</strong>, lowering infra cost by <strong>25%</strong>.</li>
                 <li>Implemented event-driven alerts with <strong>AWS SNS</strong> and modularized Lambda functions.</li>
             </ul>
         </div>
@@ -125,6 +209,7 @@
                 <li>Designed responsive <strong>React frontend</strong> with product listing, search, and cart functionalities.</li>
                 <li>Implemented role-based access control for admin, staff, and customers with different dashboards.</li>
             </ul>
+
             <p><strong>Word Lookup Dictionary</strong> (Desktop Application)</p>
             <ul>
                 <li>Built desktop dictionary app in <strong>Java Swing</strong>, fetching definitions via Free Dictionary API.</li>
@@ -146,7 +231,7 @@
             <h3>Achievements</h3>
             <ul>
                 <li>Global Rank 210 — Google Kickstart 2024</li>
-                <li>Solved 600+ problems on LeetCode & GFG; participated in 15+ contests, consistently ranked top 10-15%.</li>
+                <li>Solved 600+ problems on LeetCode & GFG; participated in 15+ contests, consistently ranked top 10–15%.</li>
             </ul>
         </div>
 
